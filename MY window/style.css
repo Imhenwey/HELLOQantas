@@ -1,0 +1,53 @@
+head {
+    font-family: cursive, sans-serif; 
+}
+
+h1, h2, h3, p, .font {
+    font-family: cursive;
+}
+
+h1 {
+  color: rgb(0, 0, 0); 
+}
+
+body{
+  background-image:url('images/background.jpg');
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-container {
+  position: relative;
+  display: inline-block;
+}
+
+.info-trigger {
+  background-image:url('images/background.jpg');
+  color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  box-shadow: url('images/background.jpg');
+}
+
+.info-tab {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(220, 220, 220);
+  padding: 20px;
+  width: 180px;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 1;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-container:hover .info-tab {
+  display: block;
+  cursor:default;
+}
